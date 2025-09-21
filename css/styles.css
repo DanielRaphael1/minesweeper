@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+.board-container {
+    display: inline-block;
+    margin: 20px auto;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    background-color: #c0c0c0;
+    border: 3px outset #c0c0c0;
+}
+
+.cell {
+    width: 40px;
+    height: 40px;
+    border: 2px outset #c0c0c0;
+    background-color: #c0c0c0;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cell:hover {
+    background-color: #d0d0d0;
+}
+
+.cell:active {
+    border: 2px inset #c0c0c0;
+}
