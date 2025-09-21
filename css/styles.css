@@ -38,3 +38,30 @@ table {
 .cell:active {
     border: 2px inset #c0c0c0;
 }
+
+.cell.revealed {
+    background-color: #e0e0e0;
+    border: 2px inset #c0c0c0;
+}
+
+.cell.revealed:hover {
+    background-color: #e0e0e0;
+}
+
+.cell.unrevealed {
+    background-color: #c0c0c0;
+    border: 2px outset #c0c0c0;
+}
+
+.restart-button {
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    margin: 0 auto;
+    display: block;
+
+}
+
+.difficulty-buttons {
+    margin: 20px;
+}
