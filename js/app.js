@@ -200,6 +200,11 @@ function cellClicked(elCell, i, j) {
 }
 
 function cellMarked(elCell, i, j) {
-    console.log('Cell marked:', i, j)
+    if (gBoard[i][j].isShown || !gGame.isOn) return
+
+    gBoard[i][j].isMarked = !gBoard[i][j].isMarked
+    console.log('Cell marked/unmarked:', i, j, 'isMarked:', gBoard[i][j].isMarked)
+
+    renderBoard(gBoard)
 }
 
